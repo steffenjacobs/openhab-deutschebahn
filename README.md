@@ -4,11 +4,11 @@ This Binding can provide the timetable for a given station used by Deutsche Bahn
 
 ## Supported Things
 
-A Thing should be created for each station to monitor the departure timetable of
+A Thing should be created for each station to monitor the departure timetable of.
 
 ## Thing Configuration
 
-Please enter the name of the station you want to monitor in the configuration section of the Thing in the Paper UI
+Please enter the name of the station you want to monitor in the configuration section of the Thing in the Paper UI.
 
 ## Channels
 
