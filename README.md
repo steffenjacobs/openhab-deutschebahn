@@ -12,7 +12,7 @@ Please enter the name of the station you want to monitor in the configuration se
 
 ## Channels
 
-There is one RefreshTransportation channel, which refreshes the timetable. The updated timetable in then written onto the OutputTransportation channel.
+There is one RefreshParisTransportation channel, which refreshes the timetable. The updated timetable in then written onto the OutputParisTransportation channel.
 
 ## Disclaimer
 
