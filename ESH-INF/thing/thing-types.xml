@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="transportation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+	xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+	<!-- Sample Thing Type -->
+	<thing-type id="sample">
+		<label>Transportation Binding Thing</label>
+		<description>Sample thing for Transportation Binding</description>
+
+		<channels>
+            <channel id="transportationRefreshChannelI" typeId="transportationRefreshChannel" />
+            <channel id="transportationOutputChannelI" typeId="transportationOutputChannel" />
+		</channels>
+
+		<config-description>
+            <parameter name="destination" type="text" required="true">
+                <label>Destination </label>
+                <description>This is destination for the transport service.</description>
+            </parameter>
+            <parameter name="location" type="text" required="true">
+                <label>Current Location</label>
+                <description>This is current location for the transport service.</description>
+            </parameter>
+		</config-description>
+
+	</thing-type>
+
+    <channel-type id="transportationRefreshChannel">
+        <item-type>String</item-type>
+        <label>Transportation Binding Refresh Channel</label>
+        <description>refreshes the Transportation information for the current location</description>
+    </channel-type>
+    
+    <channel-type id="transportationOutputChannel">
+        <item-type>String</item-type>
+        <label>Transportation Binding Output Channel</label>
+        <description>Shows the timetables for the current location</description>
+    </channel-type>
+
+</thing:thing-descriptions>
